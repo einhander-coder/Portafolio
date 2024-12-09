@@ -1,0 +1,102 @@
+/*Seccion Experiencia*/
+section.experience{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 90vw;
+    align-items: center;
+}
+
+.experience_line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.experience_box {
+    display: flex;
+    align-items: center;
+}
+.experience_box ul {
+    padding-inline-start: 0;
+}
+
+.experience_img {
+    width: 60vw;
+    margin: 50px;
+}
+
+.experience_info-container {
+    display: flex;
+    flex-direction: column;
+    margin:  10px;
+}
+
+.experiencia_boton--repo,
+.experiencia_boton--demo {
+    all: unset;
+    width: 15vw;
+    font-size: 1.4;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.01rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    
+    border-color: #2a7ae4;
+}
+.experience_boton_demo.active {
+    background-color: #2a7ae4;
+    color: white;
+}
+
+/* formato vista: Tablet */
+
+@media screen and (max-width: 768px){
+    
+    section.experience {
+        width: 90vw;
+        height: 55vh;
+    }
+    .experience_section_title {
+        font-size: 1.3rem;
+    }
+    .experience_box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .experience_img {
+        width: 90vw;
+    }
+    .experiencia__boton--repo,
+    .experiencia__boton--demo {
+      width: 12vw;
+      font-size: 1.2rem;
+    }
+}
+
+/* formato vista: Dispositivos Moviles */
+
+@media screen and (max-width: 425px) {
+    section.experience {
+        height: 45vh;
+    }
+    .experience_section_title{
+        font-size: 1.2rem;
+    }
+    /*experience_img {
+    width:90vw:
+    */
+    .experience_title {
+        font-size: 1rem;
+    }
+    .experience_text {
+        font-size: 0.8rem;
+    }
+
+    .experiencia__boton--repo,
+    .experiencia__boton--demo {
+      width: 12vw;
+      font-size: 0.6rem;
+    }
+}

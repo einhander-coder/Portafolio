@@ -1,0 +1,51 @@
+/*Formacion Academica | Section*/
+
+.h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+section.academic {
+    background-color: #eaf2fd;
+    margin-top: 4rem;
+    width: 100vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .academic_courses {
+    display: flex;
+    align-items: flex-start;
+    width:100vw;
+    justify-content: space-between;
+  }
+  
+  /*Tablet*/
+  /* @media (min-width: 768px) { */
+  @media screen and (max-width: 768px) {
+    /*Formación Académica*/
+  
+    section.academic {
+      width: 100vw;
+    }
+    
+  }
+  
+  /*Mobile*/
+  @media screen and (max-width: 425px) {
+    /*Formación Académica*/
+  
+    .academic_title {
+      font-size: 1.2rem;
+    }
+  
+    .academic_courses {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .academic_courses_list {
+      padding-left: 0;
+    }
+  }

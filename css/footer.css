@@ -1,0 +1,36 @@
+/* Pie de pagina*/
+
+.footer {
+    width: 100vw;
+    background: #2a7ae4;
+    align-items: center;
+}
+
+.footer_rodapie {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  align-content: center;
+  background: #2a7ae4;
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+/* formato vista: Tablet*/
+
+@media screen and (max-width: 768px) {
+    .footer_rodapie {
+        font-size: 1.2rem;
+    }
+}
+
+/* formato vista: Dispositivos Moviles*/
+
+@media screen and (max-width: 425px){
+    @media screen {
+      .footer_rodapie {
+        font-size: 0.8rem;
+      }
+    }
+}

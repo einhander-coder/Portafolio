@@ -1,0 +1,37 @@
+section.about{
+  background-color: #eaf2fd;
+  height: 50vh;
+  width: 110vw;
+  margin-top: 2rem;
+  margin-right: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_container{
+ width: 80vw;   
+}
+.about_title{
+    font-size: 1,4rem;
+}
+.about_paragraph{
+  width: 90vw;
+}
+
+/*formato vista: Tablet*/
+@media screen and (max-width: 768px) { 
+    .about_container{
+        width: 90vw;
+    }
+}
+
+
+/*formato vista: Dispositivos Moviles*/
+@media screen and (max-width: 465px) {
+    .about_title{
+        font-size: 1rem;
+    }
+    .about_paragraph{
+        font-size: 0.8rem;
+    }
+}

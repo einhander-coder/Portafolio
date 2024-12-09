@@ -1,0 +1,119 @@
+/* Seccion Titulo */
+
+section.title {
+    margin-top: 2rem;
+    width: 80vw;
+}
+
+.title_div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.title_profile {
+    border-radius: 50%;
+    width: 30vw;
+}
+
+.title_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.title_biography {
+    font-size: 1.9rem;
+}
+
+.title_link {
+    color: blue;
+    
+}
+
+.title_network {
+    display: flex;
+    padding-inline-start: 0px;
+    align-items: center;
+}
+
+.title_network_item {
+    margin-right: 2rem;
+}
+
+.bi {
+    font-size: 2rem;
+}
+
+.title_network_item--descargarCV {
+    all: unset;
+    width: 20vw;
+    font-size: 1.4rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.01rem;
+    padding: 1rem;
+    background-color: #679fe9;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.title_network_item--descargarCV:hover {
+    background-color: red;
+}
+
+/* formato vista: Tablet */
+
+@media screen and (max-width: 768px) {
+    section.title {
+        margin-top: 2rem;
+        width: 90vw;
+    }
+
+    .title_profile {
+        width: 22vw;
+        height: 14vh;
+    }
+
+    .bi {
+        font-size: 1.8rem;
+    }
+}
+
+.title_network_item--descargarCV {
+    width: 16vw;
+    font-size: 1.1rem;
+}
+
+/* formato vista: Dispostivos Moviles */
+
+@media screen and (max-width: 425px) {
+    section.title {
+        width: 90vw;
+    }
+    
+    .title_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .title_profile {
+        width: 22vw;
+        height: 10vh;
+    }
+
+    .title_biography {
+        font-size: 1.2rem;
+    }
+
+    .bi {
+        font-size: 1.2rem;
+    }
+
+    .title_network_item--descargarCV {
+        width: 16vw;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,67 @@
+/* Seccion Habilidades */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.skills_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.skills_line {
+    display: flex;
+    justify-content: space-around;
+}
+.skills_box {
+    display: flex;
+    width: 12vw;
+    height: 13vh;
+    background-color: white;
+    align-items: end;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+}
+.skills_box:hover {
+    background-color: #eaf2fd;
+}
+.skills_box ul {
+    padding-inline-start: 0;
+}
+
+/*formato vista: Tablet */
+
+@media screen and (max-width: 768px) {
+    .skills_title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    .skills_line {
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+    .skills_box {
+        width: 25vw;
+        height: 10vh;
+        margin-top: 1rem;
+    }
+}
+
+/* formato vista: Dispositivos Moviles*/
+
+@media screen and (max-width: 425px) {
+    
+ .skills_title {
+    font-size: 1.2rem;
+    }
+ 
+ .skills_box { 
+    width: 35vw;
+    margin-right: 0rem;
+    }
+ }
+
